@@ -7,7 +7,8 @@ namespace Domain
 {
     public class Operaciones
     {
-        public int Numero { get; set; }
+        public decimal Convertir { get; set; }
+        public TipoGrado GradoOriginal { get; set; }
         public decimal Valor { get; set; }
         public TipoGrado TipoGrado { get; set; }
     }

@@ -36,10 +36,11 @@ namespace ClasePractica.Formularios
             this.cmbTipoGrado = new System.Windows.Forms.ComboBox();
             this.cmbGradoConvert = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtValor = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnHistorial = new System.Windows.Forms.Button();
+            this.nudValor = new System.Windows.Forms.NumericUpDown();
             this.pnlInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValor)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,7 +89,7 @@ namespace ClasePractica.Formularios
             this.cmbTipoGrado.FormattingEnabled = true;
             this.cmbTipoGrado.Location = new System.Drawing.Point(81, 75);
             this.cmbTipoGrado.Name = "cmbTipoGrado";
-            this.cmbTipoGrado.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoGrado.Size = new System.Drawing.Size(132, 21);
             this.cmbTipoGrado.TabIndex = 4;
             // 
             // cmbGradoConvert
@@ -110,13 +111,6 @@ namespace ClasePractica.Formularios
             this.label2.TabIndex = 6;
             this.label2.Text = "=";
             // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(81, 110);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(121, 20);
-            this.txtValor.TabIndex = 7;
-            // 
             // txtResultado
             // 
             this.txtResultado.Location = new System.Drawing.Point(323, 113);
@@ -135,14 +129,27 @@ namespace ClasePractica.Formularios
             this.btnHistorial.UseVisualStyleBackColor = true;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
+            // nudValor
+            // 
+            this.nudValor.DecimalPlaces = 2;
+            this.nudValor.Location = new System.Drawing.Point(81, 111);
+            this.nudValor.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudValor.Name = "nudValor";
+            this.nudValor.Size = new System.Drawing.Size(132, 20);
+            this.nudValor.TabIndex = 10;
+            // 
             // FrmConversiones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 227);
+            this.Controls.Add(this.nudValor);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.txtResultado);
-            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbGradoConvert);
             this.Controls.Add(this.cmbTipoGrado);
@@ -150,10 +157,11 @@ namespace ClasePractica.Formularios
             this.Controls.Add(this.btnConvertir);
             this.Controls.Add(this.label1);
             this.Name = "FrmConversiones";
-            this.Text = "FrmConversiones";
+            this.Text = "Conversiones";
             this.Load += new System.EventHandler(this.FrmConversiones_Load);
             this.pnlInfo.ResumeLayout(false);
             this.pnlInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,8 +176,8 @@ namespace ClasePractica.Formularios
         private System.Windows.Forms.ComboBox cmbTipoGrado;
         private System.Windows.Forms.ComboBox cmbGradoConvert;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button btnHistorial;
+        private System.Windows.Forms.NumericUpDown nudValor;
     }
 }

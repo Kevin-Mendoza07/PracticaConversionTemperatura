@@ -63,6 +63,9 @@
     <EmbeddedResource Include="Formularios\FrmConversiones.resx">
       <DependentUpon>FrmConversiones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmHistorial.resx">
+      <DependentUpon>FrmHistorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,6 +92,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{6037DF25-8351-4032-AD12-09903F567816}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\Infraestructure.csproj">
+      <Project>{93B60CF3-4669-4AAC-889B-24B9D46E4D91}</Project>
+      <Name>Infraestructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

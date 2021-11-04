@@ -9,9 +9,9 @@ namespace Infraestructure
     {
         private List<Operaciones> operaciones;
 
-        public Formulas(List<Operaciones> operaciones)
+        public Formulas()
         {
-            this.operaciones = operaciones;
+            operaciones = new List<Operaciones>();
         }
 
         public void Agregar(Operaciones op)
@@ -22,6 +22,7 @@ namespace Infraestructure
             }
             operaciones.Add(op);
         }
+
 
         public List<Operaciones> Mostrar()
         {
